@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './Dashboard.css'; 
 
-function Login() {
+function Dashboard() {
   const [username, setUsername] = useState('');
 
   useEffect(() => {
@@ -21,4 +20,4 @@ function Login() {
   ); 
 }
 
-export default Login;
+export default Dashboard;
