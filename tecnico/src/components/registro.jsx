@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './registro.css';
+import { Link, useNavigate } from 'react-router-dom';
+import './Registro.css';
 
 function Registro() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleRegistro = () => {
     if (!username || !password || !confirmPassword) {
@@ -14,8 +15,11 @@ function Registro() {
     } else if (password !== confirmPassword) {
       setError('Las contraseñas no coinciden');
     } else {
+      localStorage.setItem('usuario', JSON.stringify({ username, password }));
       setError('');
       console.log('Registro exitoso. Usuario:', username);
+      // Redirigir al usuario a la página de inicio de sesión después del registro exitoso
+      navigate('/');
     }
   };
 
@@ -42,7 +46,7 @@ function Registro() {
         onChange={(e) => setConfirmPassword(e.target.value)}
       />
       <button onClick={handleRegistro}>Registrarse</button>
-      <p className="login-link"><Link to="/">¿Ya tienes cuenta?</Link></p>
+      <p className="login-link">¿Ya tienes cuenta? <Link to="/">Inicia sesión aquí</Link></p>
     </div>
   );
 }
