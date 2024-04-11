@@ -4,12 +4,10 @@ import './RecuperarPass.css';
 
 function PasswordRecovery() {
   const [usernameOrEmail, setUsernameOrEmail] = useState('');
-  const [error, setError] = useState('');
+  const [error, ] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
 
   const handlePasswordRecovery = () => {
-    // Aquí puedes agregar la lógica para enviar un correo electrónico al usuario con un enlace para restablecer la contraseña
-    // Por ahora, simplemente mostramos un mensaje de éxito
     setSuccessMessage('Se ha enviado un correo electrónico con instrucciones para restablecer su contraseña.');
   };
 

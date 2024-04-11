@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'; 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login.jsx';
+import Login from './components/login.jsx';
 import Registro from './components/Registro.jsx';
 import Dashboard from './components/Dashboard.jsx';
 import PasswordRecovery from './components/RecuperarPass.jsx';
