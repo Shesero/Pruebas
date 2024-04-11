@@ -1,0 +1,76 @@
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9; /* Color de fondo más agradable */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Color de texto más oscuro */
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='password'],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+  transition: all 0.3s ease; 
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  border-color: #007bff; 
+}
+
+button {
+  background-color: #28313d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+
+.Rpassword-link {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .Rpassword-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .Rpassword-link a:hover {
+    text-decoration: underline;
+  }

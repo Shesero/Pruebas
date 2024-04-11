@@ -1,0 +1,30 @@
+@keyframes changeColor {
+  0% {
+    color: #f1e1dd; /* Color inicial */
+  }
+  40% {
+    color: #f0c4a1; /* Color intermedio */
+  }
+  80% {
+    color: #feb47b; /* Color final */
+  } 
+  100% {
+    color: #ff7e5f;
+  }
+}
+
+@keyframes increaseSize {
+  0% {
+    transform: scale(1); /* Tamaño inicial */
+  }
+  100% {
+    transform: scale(1.5); /* Tamaño final */
+  }
+}
+
+
+
+.icon-container {
+  display: inline-block;
+  animation: changeColor 3s infinite alternate, increaseSize 3s infinite alternate; /* Aplica ambas animaciones */
+}
