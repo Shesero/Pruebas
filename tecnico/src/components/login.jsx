@@ -58,6 +58,7 @@ function Login() {
       />
       <button onClick={handleLogin}>Iniciar sesión</button>
       <p className="register-link">¿Aún no tienes cuenta? <Link to="/registro">Regístrate aquí</Link></p>
+      <p className="Rpassword-link">¿Olvidaste tu contraseña? <Link to="/Recuperarpassword">Recuperar</Link></p>
     </div>
   );
 }
